@@ -1,0 +1,20 @@
+{
+    "liveSassCompile.settings.formats": [
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css/2021-main/css"
+        },
+        // You can add more
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css/2021-main/css"
+        }
+    ],
+    // 僅編譯此區內容
+    "liveSassCompile.settings.includeItems": ["css/2021-main/scss/**"],
+    // 排除編譯
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"]
+}
