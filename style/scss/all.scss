@@ -1,0 +1,15 @@
+// * 詳情請見 README.md
+
+// * Bootstrap 4 (裡面有引入 `./variables/_bootstrap_variables.scss`)
+@import "importDependencies/index";
+
+// * 共用版型或者特定頁面之樣式，例如測驗相關的才會用到的版型
+@import "layout/index";
+// * 共用元件之樣式，例如有多種樣子的 card 元件要客製化，不一定是哪種頁面才會用到
+@import "components/index";
+// * 共用功能之樣式，例如 Bootstrap 不提供的
+@import "utilities/index";
+
+body {
+    background-color: #333;
+}

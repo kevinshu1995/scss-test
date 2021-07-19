@@ -1,20 +1,25 @@
 {
+    // * 編譯出來的 css 去向
     "liveSassCompile.settings.formats": [
-        // This is Default.
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/css/2021-main/css"
-        },
-        // You can add more
+        // 未壓縮 - 我想還是先不要好了，佔太多空間
+        // {
+        //     "format": "expanded",
+        //     "extensionName": ".css",
+        //     "savePath": "/css/2021-main/css"
+        // },
+        // 壓縮
         {
             "format": "compressed",
             "extensionName": ".min.css",
-            "savePath": "/css/2021-main/css"
+            "savePath": "/style/css"
         }
     ],
     // 僅編譯此區內容
-    "liveSassCompile.settings.includeItems": ["css/2021-main/scss/**"],
+    "liveSassCompile.settings.includeItems": ["style/scss/**"],
     // 排除編譯
-    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"]
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "style/scss/dependencies/**"
+    ]
 }
